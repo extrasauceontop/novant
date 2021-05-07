@@ -13,7 +13,10 @@ type_dict = {
 }
 
 start_url = "https://www.novanthealth.org/"
+
+x = 0
 while True:
+
     try:
         with SgChrome() as driver:
             driver.get(start_url)
@@ -34,7 +37,10 @@ while True:
             )
         break
     except Exception:
-        continue
+        pass
+    if x == 5:
+        print(driver.page_source)
+        break
 locator_domains = []
 page_urls = []
 location_names = []
