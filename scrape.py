@@ -36,7 +36,8 @@ while True:
             """
             )
         break
-    except Exception:
+    except Exception as e:
+        print(e)
         pass
     if x == 5:
         print(driver.page_source)
