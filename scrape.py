@@ -39,6 +39,7 @@ while True:
     except Exception as e:
         print(e)
         pass
+    x = x+1
     if x == 5:
         print(driver.page_source)
         break
