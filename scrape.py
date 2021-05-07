@@ -1,8 +1,13 @@
-from sgselenium import SgChrome
+# from sgselenium import SgChrome
 import json
 import pandas as pd
 # import ssl
 # ssl._create_default_https_context = ssl._create_unverified_context
+import os
+os.system("pip uninstall sgselenium")
+os.system("pip install sgselenium==0.0.15")
+
+from sgselenium import SgChrome
 
 type_dict = {
     "1": "hospital",
